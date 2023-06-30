@@ -1,0 +1,9 @@
+<h1 mat-dialog-title>¿Está seguro de eliminar el elemento?</h1>
+<div mat-dialog-content>
+  <p>{{data.superhero}} será eliminado. No se podrán recuperar los datos.</p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button color="primary" (click)="onNoClick()">No Thanks</button>
+  <span class="spacer"></span>
+  <button mat-button color="warn" (click)="onConfirm()" cdkFocusInitial>Ok</button>
+</div>
